@@ -19,10 +19,16 @@ fn main() {
     takes_ownership(s);
 
     let x = 5;
+
+    makes_copy(x);
 }
 
 fn takes_ownership(some_string:String){
 
     println!("{} ownership taken", some_string);
 
+}
+
+fn makes_copy(some_integer: i32){
+    println!("{} make copy" , some_integer);
 }
